@@ -8,7 +8,7 @@ var mongoose = require('mongoose');
 var cors = require('cors');
 
 //DB Connection
-mongoose.connect('mongodb://kpascascio:k12323@ds115411.mlab.com:15411/bucketlist');
+mongoose.connect(process.env.DBADDRESS);
 
 //Middleware
 app.use(cors());
